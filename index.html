@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shadrach Sherbet | Portfolio</title>
+
+    <style>
+        /* ===== WEBSITE COLOURS ===== */
+        /* Change these values to customize your colours */
+
+        :root {
+            --primary: #064e3b;
+            --secondary: #10b981;
+            --background: #f0fdf4;
+            --text: #535151;
+            --white: #fffefe;
+        }
+
+        /* ===== GENERAL STYLING ===== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* ===== NAVIGATION ===== */
+
+        header {
+            background: var(--primary);
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: var(--white);
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #65e0dc;
+        }
+
+        /* ===== SECTIONS ===== */
+
+        section {
+            padding: 70px 8%;
+            text-align: center;
+            scroll-margin-top: 75px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* ===== HOME ===== */
+
+        #home {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: var(--white);
+        }
+
+        #home h1 {
+            color: var(--primary);
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        #home p {
+            max-width: 650px;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 12px 25px;
+            margin-top: 22px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background: var(--primary);
+        }
+
+        /* ===== ABOUT ===== */
+
+        #about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* ===== SKILLS ===== */
+
+        #skills {
+            background: var(--white);
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 6px;
+        }
+
+        /* ===== PROJECTS ===== */
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .project-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .project-card h3 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        /* ===== CONTACT ===== */
+
+        #contact {
+            background: var(--white);
+        }
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ===== MOBILE RESPONSIVE DESIGN ===== */
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 15px 5%;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            #home h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 50px 6%;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION MENU ===== -->
+    <header>
+        <nav>
+            <div class="logo">Shadrach Sherbet</div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HOME SECTION ===== -->
+    <!-- Edit your introduction below -->
+
+    <section id="home">
+        <h1>Hello, I'm Shadrach Sherbet</h1>
+
+        <p>
+            Welcome to my personal portfolio.
+            I am an aspiring IT professional passionate
+            about technology, computer systems, networking
+            and web development.
+        </p>
+
+        <a href="#about" class="button">Learn More</a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            My name is Shadrach Sherbet. I am an
+            Information Technology student from
+            Papua New Guinea. I enjoy learning about
+            computers, solving technical problems and
+            developing my IT skills. My goal is to become
+            a skilled IT professional.
+        </p>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <!-- Add or remove skills as needed -->
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">Computer Troubleshooting</div>
+            <div class="skill">Networking</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">IT Support</div>
+            <div class="skill">Microsoft Office</div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A personal website built using HTML
+                    and CSS to display my skills and background.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>PNG Tech Services</h3>
+                <p>
+                    A business website project offering
+                    computer repairs, networking and IT support.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Networking Practice</h3>
+                <p>
+                    Practical networking activities involving
+                    IP addresses and connectivity testing.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Thank you for visiting my portfolio.
+            I welcome opportunities to connect and learn.
+        </p>
+
+        <!-- Replace example.com with your real contact page when ready -->
+
+        <a href="https://example.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button">
+            Contact Me
+        </a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+        <p>
+            &copy; 2026 Shadrach Sherbet.
+            All Rights Reserved.
+        </p>
+        <p>Personal Portfolio | Papua New Guinea</p>
+    </footer>
+
+    <!-- ===== OPTIONAL JAVASCRIPT ===== -->
+    <script>
+        // Displays a welcome message when the page loads.
+
+        window.addEventListener("load", function() {
+            console.log("Welcome to Shadrach Sherbet's Portfolio!");
+        });
+    </script>
+
+</body>
+</html>
